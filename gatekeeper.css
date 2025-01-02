@@ -1,0 +1,374 @@
+
+@font-face {
+	font-family: league-spartan;
+	src: url("./fonts/LeagueSpartan-VariableFont_wght.ttf");
+}
+
+@font-face {
+	font-family: nise-sega-sonic;
+	src: url("./fonts/NiseSegaSonic.TTF");
+}
+
+@font-face {
+	font-family: anton;
+	src: url("./fonts/Anton-Regular.ttf");
+}
+
+@font-face {
+	font-family: horizon;
+	src: url("./fonts/Horizon.otf");
+}
+
+.hl-red1 {
+	color:hsl(3,55%,40%);
+}
+
+.hl-red2 {
+	color:hsl(3,50%,55%);
+}
+
+.hl-orange1 {
+	color:hsl(18,65%,40%);
+}
+
+.hl-orange2 {
+	color:hsl(18,60%,55%);
+}
+
+.hl-yellow1 {
+	color:hsl(38,65%,45%);
+}
+
+.hl-yellow2 {
+	color:hsl(38,60%,60%);
+}
+
+.hl-puse1 {
+	color:hsl(86,35%,55%);
+}
+
+.hl-puse2 {
+	color:hsl(86,30%,65%);
+}
+
+.hl-green1 {
+	color:hsl(111,30%,40%);
+}
+
+.hl-green2 {
+	color:hsl(111,25%,55%);
+}
+
+.hl-cyan1 {
+	color:hsl(155,55%,40%);
+}
+
+.hl-cyan2 {
+	color:hsl(155,45%,55%);
+}
+
+.hl-blue1 {
+	color:hsl(212,60%,40%);
+}
+
+.hl-blue2 {
+	color:hsl(212,55%,55%);
+}
+
+.hl-purple1 {
+	color:hsl(262,30%,40%);
+}
+
+.hl-purple2 {
+	color:hsl(262,25%,50%);
+}
+
+.hl-pink1 {
+	color:hsl(333,45%,50%);
+}
+
+.hl-pink2 {
+	color:hsl(333,40%,60%);
+}
+
+.hl-steel {
+	color:hsl(200,20%,45%);
+}
+
+.hl-white {
+	color:hsl(0,0%,75%);
+}
+
+.hl-66t {
+	color:rgba(24,24,24,0.667);
+}
+
+.hl-33t {
+	color:rgba(24,24,24,0.333);
+}
+
+.hl-black {
+	color:hsl(0,0%,5%);
+}
+
+body {
+	margin: 0;
+	font-family: sans-serif;
+	font-size: 16px;
+	color: rgb(24, 24, 24);
+	background-image: url('./bg.png');
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	background-repeat: repeat;
+}
+
+tt,
+code {
+	font-family: monospace;
+}
+
+code {
+	padding: 0 0.25em;
+	border-radius: 0.25em;
+	background-color: rgba(48, 48, 48, 0.0625);
+}
+
+code.block {
+	margin: 0.5em auto;
+	display: block;
+	white-space: pre;
+	overflow-x: auto;
+	max-width: 80ch;
+	tab-size: 3;
+	padding: 0.5em 0.75em;
+	border-radius: 5px;
+	background-color: rgba(248, 248, 248, 0.75);
+	border: 2px solid rgba(48, 48, 48, 0.75);
+	border-radius: 5px 5px 10px 10px;
+	border-bottom: none;
+}
+
+p {
+	margin: 0.667em 0;
+}
+
+p.passage {
+	text-align: justify;
+	text-indent: 40px;
+}
+
+h1 {
+	display: block;
+	width: 100%;
+	margin: 0;
+}
+
+/* this is the C* image logo */
+h1 > img {
+	text-align: center;
+	width: 200px;
+	margin: 0 auto 50px;
+}
+
+h2 {
+	font-weight: bold;
+	margin: 0 0 25px;
+}
+
+h3 {
+	font-weight: bold;
+	text-align: left;
+	margin: 0 0 8px;
+}
+
+video {
+	display: block;
+}
+
+td {
+	vertical-align: top;
+}
+
+ul,
+ol {
+	margin: 0;
+	padding-left: 24px;
+}
+
+ol.verse > li {
+	margin: 0;
+}
+
+table {
+	border-spacing: 0;
+}
+
+hr {
+	background-image: linear-gradient(to right, rgba(0,0,0,0),
+		rgba(0,0,0,0.75), rgba(0,0,0,0.75), rgba(0,0,0,0.75),
+		rgba(0,0,0,0));
+	border: 0;
+	height: 1px;
+	width: 100%;
+	margin: 64px auto;
+	padding: 0;
+}
+
+img {
+	display: block;
+}
+
+a {
+	transition: border 150ms ease-in-out;
+	text-decoration: none;
+	color: steelblue;
+}
+
+a:link,
+a:visited {
+	border-bottom: 1px solid transparent;
+}
+
+a:active,
+a:hover {
+	border-bottom: 1px solid steelblue;
+}
+
+/* ***** */
+
+img.screenshot {
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+p.title {
+	font-family: 'nise-sega-sonic', sans-serif;
+	font-size: 50px;
+}
+
+table.full, table.heading {
+	width: 100%;
+}
+
+table.flexible > tbody > tr > td {
+	padding: 1px 5px;
+}
+
+span.currency {
+	font-weight: bold;
+	font-family: 'Source Code Pro', monospace;
+	padding-right: 1px;
+}
+
+div.button {
+	display: inline-block;
+	padding: 2px;
+	background-color: rgba(48, 48, 48, 0.25);
+	border: 2px solid rgba(48, 48, 48, 0.5);
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-radius: 3px 3px 4px 4px;
+	min-width: 75px;
+	text-align: center;
+}
+
+div.button a {
+	color: white;
+	text-shadow: -1px 1px 0 black;
+	text-decoration: none;
+	font-weight: bold;
+	border-bottom: none;
+	padding: 0 10px;
+}
+
+.ani {
+	margin: 0 auto;
+}
+
+div.main {
+	background-color: rgb(255, 255, 255);
+	background-color: rgba(255, 255, 255, 0.75);
+	width: 880px;
+	min-height: 100vh;
+	padding: 10px;
+}
+
+div.main-outer {
+	box-shadow: 0 0 10px black;
+	width: 900px;
+	margin: 0 auto;
+}
+
+a.mobile-view {
+	font-size: 90%;
+}
+
+img.logo {
+	width: 300px;
+	padding: 15px 10px;
+}
+
+td.remainder {
+	font-family: 'Neoverdana', 'Verdana', sans-serif;
+}
+
+td.remainder p {
+	text-align: right;
+	margin: 0;
+}
+
+td.remainder ul {
+	text-align: right;
+	margin: 0;
+	list-style-type: none;
+}
+
+td.remainder ul li {
+	display: inline-block;
+	padding: 2px;
+	border: 2px solid rgba(48, 48, 48, 0.5);
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-radius: 3px 3px 4px 4px;
+	min-width: 75px;
+	text-align: center;
+}
+
+td.remainder ul li a {
+	color: white;
+	text-shadow: -1px 1px 0 black;
+	text-decoration: none;
+	font-weight: bold;
+	border-bottom: none;
+	padding: 0 10px;
+}
+
+td.remainder ul li.return {
+	background-color: hsl(32, 50%, 45%);
+}
+
+td.article {
+	padding: 0 75px;
+}
+
+ol.verse {
+	padding-left: 32px;
+}
+
+ol.toc {
+	padding-left: 20px;
+}
+
+ol.level-1 {
+	font-weight: bold;
+	list-style: upper-roman;
+}
+
+ol.level-2 {
+	font-weight: normal;
+	list-style: decimal;
+	padding-left: 16px;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=1" />
+<meta name="robots" content="index, follow" />
+<title>Working around Gatekeeper &vert; Sonic Galactic</title>
+<meta name="og:title" content="Working around Gatekeeper" />
+<meta name="og:site_name" content="Sonic Galactic" />
+<meta name="og:type" content="website" />
+<meta name="og:url" content="https://sonicgalactic.github.io/" />
+<meta name="og:locale" content="en_US" />
+<meta name="og:description" content="Working around Gatekeeper | Sonic Galactic" />
+<meta name="og:image" content="https://cdn.tohoku.ac/macdamaged.jpg" />
+<link rel="stylesheet" href="/gatekeeper.css" />
+<style>
+</style>
+</head>
+<body>
+<div class="main-outer">
+<div class="main">
+<table class="heading">
+<tbody>
+<tr>
+<td>
+<p class="title">Sonic Galactic</p>
+</td>
+<td class="remainder">
+<table class="full">
+<tbody>
+<tr>
+<td>
+<ul>
+<li class="return"><a href="/download.html">Return to
+Downloads</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="article">
+<tbody>
+<tr>
+<td>
+<h1>Working around Gatekeeper</h1>
+<p>
+Playing <strong>Sonic Galactic</strong> on a Mac is sadly not as straightforward as we would like. While we do provide an official build of the game for Macs with Apple Silicon (and recommend WINE for those with Intel Macs), one does not simply run the <code>.app</code> and get on with it. The culprit of this is none other than <strong>Gatekeeper</strong>.
+</p>
+<h2>What is Gatekeeper?</h2>
+<p>
+The long and short of it is, Gatekeeper is a kind of bridge troll hired by Apple to bully developers into paying them $100/year to get their apps &lsquo;notarised&rsquo; by the trillion-dollar company. Gatekeeper makes it so when you, the user, download an <code>.app</code> from the Worldwide Web, unzip it, and try to run it, you get a very dishonest error message:
+</p>
+<img src="https://cdn.tohoku.ac/macdamaged.png" alt="Mac app damaged" class="screenshot" />
+<p>
+Apple hopes that this fake error message will be scary enough to normal users to coerce developers into paying the fee, and if not, their hope is that the workaround will be scary enough to dissuade normal users from doing it. Sonic Galactic is a fan-made project though, and cannot afford to pay notarisation fees even if we wanted to. It truly is a shame that Apple does not want to play fair in the market by giving developers <em>incentives</em> to buy their notarisation services, instead relying on extorting them into it by holding their users hostage with a dishonest and manipulative user experience.
+</p>
+<h2>The fix</h2>
+<p>
+When you download Sonic Galactic for the Mac, you'll get a zipped folder. Unzip it, and you will have a file called <strong>SonicGalactic.app</strong>. Assuming it's in your <strong>Downloads</strong> folder, open up a Terminal (press Command+Spacebar and search for Terminal), and run the following command:
+</p>
+<pre>xattr -d com.apple.quarantine ~/Downloads/SonicGalactic.app</pre>
+<p>
+If it doesn't work, make sure you have the right file name in the command. There is nothing wrong with the app provided. <strong>Despite what Apple's error dialogs may say, it is not damaged. Do not throw it in the Trash.</strong>
+</p>
+<p>
+That's it! You've done all you need to get Sonic Galactic running famously on your Mac. Thanks for playing!
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<table>
+<tbody>
+<tr>
+<td>
+<p>
+Sonic Galactic and Starteam are NOT affiliated with Sonic Team or SEGA Enterprises. This is a fangame, developed without involvement from SEGA, without intent to profit in any fashion. Please support both SEGA and official Sonic the Hedgehog releases.
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>
