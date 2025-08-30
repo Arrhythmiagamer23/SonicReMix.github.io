@@ -1,3 +1,4 @@
-# SonicGalactic.github.io
+# SonicRemix.github.io
 
-this is the site ever
+Welcome to the next level
+
